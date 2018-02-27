@@ -17,4 +17,7 @@ gcloud components update (might need sudo)
 ``` bash
 #upload file to google cloud
 gsutil -m cp -r  * gs://assets.threls.com
+
+#Making groups of objects publicly readabl
+gsutil iam ch allUsers:objectViewer gs://assets.threls.com
 ```
